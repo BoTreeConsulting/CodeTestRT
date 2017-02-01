@@ -1,0 +1,92 @@
+<div id='cssmenu'>
+        <ul>
+           <li class='has-sub <?php if($page=='dashboard' || $page=='personal_dashboard'){ echo "open";}?>' ><a href='#'><span>Dashboard</span></a>
+              <ul <?php if($page=='dashboard' || $page=='personal_dashboard'){ echo 'style="display: block;"';}?>>
+                 <li><a href="<?php echo site_url('/admin/dashboard')?>" <?php if($page=='dashboard'){ echo 'style="color: #00335d;font-weight:bold;"';}?>><span>Management Dashboard</span></a></li>
+                 <li><a href="<?php echo site_url('/admin/personal_dashboard')?>" <?php if($page=='personal_dashboard'){ echo 'style="color: #00335d;font-weight:bold;"';}?>><span>Personal Dashboard</span></a></li>
+
+              </ul>
+           </li>
+           <li class='has-sub <?php if($page=='accounts' || $page=='manage_staff' || $page=='manage_leaves' || $page=='add_staff' || $page=='edit_staff' || $page=='add_leave' || $page=='edit_leave'){ echo "open";}?>'><a href='#'><span>Staff (Users)</span></a>
+              <ul <?php if($page=='accounts' || $page=='manage_staff' || $page=='manage_leaves'  || $page=='add_staff' || $page=='edit_staff' || $page=='add_leave' || $page=='edit_leave'){ echo 'style="display: block"';}?>>
+              <li><a href="<?php echo site_url('/admin/accounts')?>" <?php if($page=='accounts' ){echo 'style="color: #00335d;font-weight:bold;"';}?>><span>My Account</span></a></li>
+              <li><a href="<?php echo site_url('/admin/manage_staff')?>" <?php if($page=='manage_staff'  || $page=='add_staff' || $page=='edit_staff' ){ echo 'style="color: #00335d;font-weight:bold;"';}?>><span>Manage Staff</span></a></li>
+			  <li><a href="<?php echo site_url('/admin/manage_leaves')?>" <?php if($page=='manage_leaves' || $page=='add_leave' || $page=='edit_leave'){ echo 'style="color: #00335d;font-weight:bold;"';}?>>Annual leave application</a></li>
+			   <li><a href="">Time sheet</a></li>
+			    <li><a href="">Incident Report</a></li>
+              </ul>
+           </li>
+           <li class='has-sub <?php if($page=='manage_customers' || $page=='add_customer' || $page=='edit_customer'){ echo "open";}?>'><a href='#'><span>Customer</span></a>
+              <ul <?php if($page=='manage_customers' || $page=='add_customer' || $page=='edit_customer'){echo 'style="display: block"';}?>>
+                  <li><a href="<?php echo site_url('/admin/manage_customers')?>" <?php if($page=='manage_customers' || $page=='add_customer' || $page=='edit_customer'){echo 'style="color: #00335d;font-weight:bold;"';}?>><span>Manage Customers</span></a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span>Appointment</span></a>
+              <ul>
+                 <li><a href="#"><span>Manage Appointments</span></a></li>
+              </ul>
+           </li>
+           <li class='has-sub <?php if($page=='manage_venues' || $page=='add_venue' || $page=='edit_venue'){ echo "open";}?>'><a href='#'><span>Venues</span></a>
+              <ul <?php if($page=='manage_venues' || $page=='add_venue' || $page=='edit_venue'){ echo 'style="display: block"';}?>>
+              <li><a href="<?php echo site_url('/admin/manage_venues')?>" <?php if($page=='manage_venues' || $page=='add_venue' || $page=='edit_venue'){ echo 'style="color: #00335d;font-weight:bold;"';}?>><span>Manage Venues</span></a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span>Contracts</span></a>
+              <ul>
+              <li><a href="#"><span>Manage Contracts</span></a></li>
+              <li><a href="#"><span>Manage Contracts</span></a></li>
+			  <li><a href="#">Contract commencement checklist</a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span> 	Manage Subcontractors</span></a>
+              <ul>
+              <li><a href="#">Subcontractors</a></li>
+			  <li><a href="#"> 	Induction checklist</a></li>
+			  <li><a href="#"> 	Skills assessment and training</a></li>
+              </ul>
+           </li>
+           <li class='has-sub'><a href='#'><span>Logging</span></a>
+              <ul>
+                 <li><a href="#">Event Viewer Page</a></li>
+              </ul>
+           </li>
+           <li><a href='#'><span>Quality Inspection Report (QIS)</span></a></li>
+           <li class='has-sub <?php if($page=='manage_cars' || $page=='add_car' || $page=='edit_car'){ echo "open";}?>'><a href='#'><span>Corrective Action Report (CAR)</span></a>
+		   <ul <?php if($page=='manage_cars' || $page=='add_car' || $page=='edit_car'){echo 'style="display: block"';}?>>
+              <li><a href="<?php echo site_url('/admin/manage_cars')?>" <?php if($page=='edit_car' || $page=='add_car' || $page=='edit_car'){ echo 'style="color: #00335d;font-weight:bold;"';}?>><span>Manage Corrective Action Reports</span></a></li>
+              </ul>
+		   </li>
+           <li><a href='#'>Profit Loss Statement (PLS)</a></li>
+		    <li><a href='#'>Site Changes Request</a></li>
+			 <li class='has-sub <?php if($page=='manage_lostjobs' || $page=='add_lostjob' || $page=='edit_lostjob'){ echo "open";}?>'><a href='#'> <span>Lost Job</span></a>
+			 <ul <?php if($page=='manage_lostjobs' || $page=='add_lostjob' || $page=='edit_lostjob'){  echo 'style="display: block"';}?>>
+              <li><a href="<?php echo site_url('/admin/manage_lostjobs')?>" <?php if($page=='manage_lostjobs' || $page=='add_lostjob' || $page=='edit_lostjob'){ echo 'style="color: #00335d;font-weight:bold;"'; }?>><span>Manage Lost Jobs</span></a></li>
+              </ul>
+			 </li>
+			  <li><a href='#'>Stock Items</a></li>
+			   <li><a href='#'>Ordering</a></li>
+			    <li class='has-sub <?php if($page=='manage_reports' || $page=='add_report' || $page=='edit_report'){ echo "open";}?>'><a href='#'><span>Incident Report</span></a>
+				 <ul <?php if($page=='manage_reports' || $page=='add_report' || $page=='edit_report'){ echo 'style="display: block"';}?>>
+              <li><a href="<?php echo site_url('/admin/manage_reports')?>" <?php if($page=='manage_reports' || $page=='add_report' || $page=='edit_report'){ echo 'style="color: #00335d;font-weight:bold;"'; }?>><span>Manage Reports</span></a></li>
+              </ul></li>
+           
+			    <li><a href='<?php echo site_url('/admin/logout')?>'> 	Logout</a></li>
+           
+           
+           
+          <!--li class="has-sub open"><a><span>Account Settings</span><span class="holder"></span></a>
+             <ul >
+                 <li class="has-sub open"><a><span>Update Profile</span></a>
+                        <ul>
+                           <li><a href="<? //=site_url('/admin/accounts')?>"><span>testsubt</span></a></li>
+                           <li class="last"><a href="<? //=site_url('/admin/accounts')?>"><span>testsubt</span></a></li>
+                        </ul>
+                 </li>
+                 <li><a href="<? //=site_url('/admin/change_password')?>"><span>Change Password</span></a></li>
+                 <li><a href="<? //=site_url('/admin/account_settings')?>"><span>Change Email</span></a>
+                 
+             </ul>
+      	 </li-->
+           
+        </ul>
+		</div>
